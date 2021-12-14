@@ -24,7 +24,7 @@ const PostWidget = ({ categories, slug }) => {
                 <div key={ind + 1} className="flex items-center w-full mb-3">
                     <div className="w-16 flex-none">
                         <img
-                            src={ele.featuredImage.url}
+                            src={ele.featuredImage?.url}
                             height="60px"
                             width="60px"
                             alt={ele.title}

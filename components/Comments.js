@@ -18,25 +18,25 @@ const Comments = ({ slug }) => {
                     </h3>
                     {comments.map((comment) => (
                         <div
-                            key={comment.createdAt}
+                            key={comment?.createdAt}
                             className="border-b mb-4 pb-4"
                         >
                             <p className="mb-4">
                                 <span className="text-white font-semibold">
-                                    {comment.name}
+                                    {comment?.name}
                                 </span>{" "}
                                 <span className="text-blue-500 ml-2 mr-2">
                                     {" "}
                                     on
                                 </span>
                                 <span className="text-blue-300">
-                                    {moment(comment.createdAt).format(
+                                    {moment(comment?.createdAt).format(
                                         "MMM DD, YYYY"
                                     )}
                                 </span>
                             </p>
                             <p className="w-full text-green-400 whitespace-pre-line font-semibold">
-                                {parse(comment.comment)}
+                                {parse(comment?.comment)}
                             </p>
                         </div>
                     ))}
