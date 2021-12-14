@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { getFeaturePost } from "../services";
 import Carousel from "react-material-ui-carousel";
-import Link from "next/Link";
+import Link from "next/link";
 const FeaturedPost = () => {
     const [featuredPost, setFeaturedPost] = useState([]);
 

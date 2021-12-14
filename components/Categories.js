@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import moment from "moment";
-import Link from "next/Link";
+
+import Link from "next/link";
 import { getCategories } from "../services";
 const Categories = () => {
     const [categories, setCategories] = useState([]);
