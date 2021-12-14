@@ -21,14 +21,16 @@ const PostDetails = ({ post }) => {
                 <div className="col-span-1 lg:col-span-8">
                     <PostDetail post={post} />
                     <Author author={post?.author} />
-                    <CommentFrom slug={post.slug} />
-                    <Comments slug={post.slug} />
+                    <CommentFrom slug={post?.slug} />
+                    <Comments slug={post?.slug} />
                 </div>
                 <div className="col-span-1 lg:col-span-4">
                     <div className="relative lg:sticky top-8">
                         <PostWidget
-                            slug={post.slug}
-                            categories={post.categories.map((ele) => ele.slug)}
+                            slug={post?.slug}
+                            categories={post?.categories?.map(
+                                (ele) => ele.slug
+                            )}
                         />
                         <Categories />
                     </div>
