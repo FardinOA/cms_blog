@@ -37,7 +37,7 @@ const PostWidget = ({ categories, slug }) => {
                         </p>
                         <Link
                             className="text-md  justify-end"
-                            href={`/posts/${ele.slug}`}
+                            href={`/post/${ele.slug}`}
                         >
                             {ele.title}
                         </Link>
