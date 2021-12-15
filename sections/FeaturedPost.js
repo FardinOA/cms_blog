@@ -24,9 +24,9 @@ const FeaturedPost = () => {
                         />
                         <Link
                             href={`/post/${post.slug}`}
-                            className="text-black ml-8 cursor-pointer"
+                            className="text-black ml-8 "
                         >
-                            <h2 className="   text-white text-center font-semibold text-xl">
+                            <h2 className="   text-white text-center font-semibold text-xl cursor-pointer">
                                 {post.title} <span>By</span>{" "}
                                 <span className="text-black ml-8">
                                     {post.author.name}
